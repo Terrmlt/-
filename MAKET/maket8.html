@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант 8</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <header>
+        <div class="nav1">
+            <div class="nav1_content">
+                <div class="nav1_left_block">
+                    <div class="nav_logo">
+                        <a href="#" class="logo_link">
+                            <img src="imgs/LOGO.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div>
+                        <img src="line/line-header.svg" alt="" class="line-header">
+                    </div>
+                    
+                    <div class="nav_text">
+                        ИСПОЛНИТЕЛЬ
+                    </div>
+                </div>
+
+                <div class="nav1_right_block">
+                    <div class="right_block_text_panel"> 
+                        <div class="lk_text">Личный кабинет</div>
+                        <div class="transit_text">ООО "Транзит"</div>
+                    </div>
+                    
+                    <div class="exit">
+                        <a href="#" class="exit-text">Выход</a>
+                        <a href="#" class="exit-logo">
+                            <img src="imgs/EXIT.svg" alt="выход">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <div class="nav_content">
+                <a href="#" class="nav-link_el" tabindex="1">Поиск заказов</a>
+                <a href="#" class="nav-link_el" tabindex="1">Заказы</a>
+                <a href="#" class="nav-link_el" tabindex="1">Маршруты</a>
+                <a href="#" class="nav-link_el" tabindex="1">Карточка ТК</a>
+                <a href="#" class="nav-link_el" tabindex="1">Настройки</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--main-->
+
+    <main>  
+        <div class="main_block_content">
+            <div class="mb_head_text">
+                Текущие заказы
+            </div>
+            <table class="orders_table"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th>Дата</th>
+                    <th>Направление</th>
+                    <th>Статус заказа</th>
+                </tr>
+                <tr id = "row1">
+                    <td class = "table_element">
+                        <div class="date_time">
+                            <div class="date_value">31.01.20</div>
+                            <div class="time_value">08:00</div>
+                        </div>
+                    </td>
+                    <td class = "table_element">
+                        <div class="direction">
+                            <div class="direction_from_where">Чита</div>
+                            <div class="direction_arrow"><img src="imgs/DIR_ARROW.svg" alt=""></div>
+                            <div class="direction_where">Арахлей</div>
+                        </div>
+                    </td>
+                    <td class = "table_element">
+                        <div class="status">
+                            <div class="status_value"><img src="imgs/CHECK_TRUE.svg" alt="" class = "check_true"></div>
+                            <div class="status_text">Оплачен</div>
+                        </div>
+                    </td>
+                    <td class = "table_button" id = 'tb1' tabindex="2">
+                        <img src="imgs/TABLE_BUTTON.svg" alt="">
+                    </td>
+                </tr>
+                <tr id = "row2">
+                    <tr id = "row2">
+                        <td class = "table_element1">
+                            <div class="date_time">
+                                <div class="date_value"  id = "te_selected">05.02.20</div>
+                                <div class="time_value"  id = "te_selected">10:00</div>
+                            </div>
+                        </td>
+                        <td class = "table_element1" >
+                            <div class="direction" id = "te_selected">
+                                <div class="direction_from_where">Чита</div>
+                                <div class="direction_arrow"><img src="imgs/DIR_ARROW_SELECTED.svg" alt=""></div>
+                                <div class="direction_where">Чита</div>
+                            </div>
+                        </td>
+                        <td class = "table_element1" >
+                            <div class="status" id = "te_selected">
+                                <div class="status_value"><img src="imgs/CHECK_FALSE.svg" alt="" class = "check_false"></div>
+                                <div class="status_text">Не оплачен</div>
+                            </div>
+                        </td>
+                        <td class = "table_button" id = 'tb2' tabindex="2">
+                            <img src="imgs/TABLE_BUTTON_SELECTED.svg" alt="">
+                        </td>
+                    </tr>
+                    <tr id = "row2">
+                        <td colspan="4">
+                        <table class = "order_info">
+                            <tr>
+                                <th class = "oi_th">Время подачи ТС</th>
+                                <th class = "oi_th">Место подачи ТС</th>
+                                <th class = "oi_th">Информация</th>
+                            </tr>
+                            <tr class = "oi_row">
+                                <td>
+                                    <div class="ti_date_block">
+                                        <div class="ti_time">10:00</div>
+                                        <div class="ti_date">05 фев</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ti_place">
+                                        <p>Школа №49</p>
+                                        <p>ул. 9- Января 54</p>
+                                        <p>Центральный вход</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="ti_info_text">
+                                        <p>автобус GRAND BIRD</p>
+                                        <p>EK 706</p>
+                                        <p>Водитель - Владислав</p>
+                                        <p>914-000-00-00</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class = "nb_row">
+                                <td colspan="4">
+                                    <div class="note_block">
+                                        <div class="nb_head_text">
+                                            ПРИМЕЧАНИЯ
+                                        </div>
+                                        <div class="nb_text">
+                                            Обзорная экскурсия по городу для учеников 6-го класса.
+                                            Примерно 38 детей + 2 руководителя + 1 экскурсовод.
+                                             Автобусу прибыть минимум за 15 минут до начала экскурсии.
+                                              Время на экскурсионную программу -3 часа.
+                                            Основные остановки - Мемориал Победы, Кафедральный Собор, Дацан,
+                                             Площадь Ленина. Окончание обслуживание в 13:00 - площадь Ленина.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                      </td>
+                    </tr>                
+                </tr>
+                
+                <tr id = "row3">
+                    <td class = "table_element" id = "top_border">
+                        <div class="date_time">
+                            <div class="date_value">14.02.20</div>
+                            <div class="time_value">07:00</div>
+                        </div>
+                    </td>
+                    <td class = "table_element" id = "top_border">
+                        <div class="direction">
+                            <div class="direction_from_where">Чита</div>
+                            <div class="direction_arrow"><img src="imgs/DIR_ARROW.svg" alt=""></div>
+                            <div class="direction_where">Дарасун</div>
+                        </div>
+                    </td>
+                    <td class = "table_element" id = "top_border">
+                        <div class="status">
+                            <div class="status_value"><img src="imgs/CHECK_TRUE.svg" alt="" class = "check_true"></div>
+                            <div class="status_text">Оплачен</div>
+                        </div>
+                    </td>
+                    <td class = "table_button" id = 'tb3' tabindex="2">
+                        <img src="imgs/TABLE_BUTTON.svg" alt="">
+                    </td>
+                </tr>
+                <tr id = "row4">
+                    <td>
+                        <div class="date_time">
+                            <div class="date_value">20.03.20</div>
+                            <div class="time_value">08:00</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="direction">
+                            <div class="direction_from_where">Агинское</div>
+                            <div class="direction_arrow"><img src="imgs/DIR_ARROW.svg" alt=""></div>
+                            <div class="direction_where">Арахлей</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="status">
+                            <div class="status_value"><img src="imgs/CHECK_FALSE.svg" alt="" class = "check_false"></div>
+                            <div class="status_text">Не оплачен</div>
+                        </div>
+                    </td>
+                    <td class = "table_button" id = 'tb4' tabindex="2">
+                        <img src="imgs/TABLE_BUTTON.svg" alt="">
+                    </td>
+                </tr>
+                
+
+            </table>
+            <div class="mb_head_text" id = "order_archive">Архив заказов</div>
+    </main>
+
+    <!--footer-->
+
+    <footer>
+        <nav class="footer">
+            <div class="footer_content">
+                <div class="social-media">
+                    <ul class="nav-sm">
+                        <li>
+                            <a href="#" class="logo-sm">
+                                <img src="imgs/VK.svg" alt="VK">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="logo-sm">
+                                <img src="imgs/FB.svg" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="logo-sm">
+                                <img src="imgs/T.svg" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-------------------------------------------->
+                <div class="prava">
+                    <p class="text-foot">авто маяк 2020<br>все права защищены</p>
+                </div>
+                <div class="number">
+                    <p class="number-text">8-800-000-00-00</p>
+                </div>
+                <!-------------------------------------------->
+                <div class="cont">
+                    <ul class="text-f">
+                        <li>
+                            <a href="#" class="text-foot">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-foot">Центр поддержки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-foot">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
